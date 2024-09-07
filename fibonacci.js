@@ -29,6 +29,7 @@ function fibs(num) {
 }
 
 function fibsRec(num, arr = []) {
+  console.log("This was printed recursively");
   // Add the value of f(0) when the length of array is empty
   if (arr.length === 0) {
     arr.push(arr.length);
