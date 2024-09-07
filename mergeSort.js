@@ -20,6 +20,7 @@ function merge(arr, start, mid, end) {
   let i = 0,
     j = 0;
   let k = start;
+
   while (i < n1 && j < n2) {
     if (leftArr[i] < rightArr[j]) {
       arr[k++] = leftArr[i++];
@@ -37,6 +38,7 @@ function merge(arr, start, mid, end) {
     arr[k++] = rightArr[j];
   }
 
+  //   Return the sorted array
   return arr;
 }
 
